@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff1ec" />
+  <meta name="description" content="A tiny birthday surprise made with love." />
+  <title>Happy Birthday, My Favorite Person ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" role="img" aria-label="Birthday couple photo"></div>
+      <div class="hero-overlay"></div>
+      <button class="menu" aria-label="Open menu">☰</button>
+      <div class="hero-copy">
+        <p class="eyebrow">To my favorite person <span>♡</span></p>
+        <h1>Happy<br><em>Birthday</em></h1>
+        <p class="hero-sub">To the one who makes life so much brighter <span>♥</span></p>
+      </div>
+    </section>
+
+    <section class="card form-card" id="create">
+      <div class="section-title"><span>♡</span><h2>Create a Special Birthday Message</h2><span>♡</span></div>
+      <p class="muted">Fill in a few details and we'll turn them into a little surprise.</p>
+
+      <form id="birthdayForm">
+        <div class="field-grid">
+          <label>
+            <span>♡</span>
+            <input id="recipient" maxlength="40" placeholder="Her / His Name" required />
+            <small>e.g. My Love, Bestie, Partner</small>
+          </label>
+          <label>
+            <span>♥</span>
+            <input id="sender" maxlength="40" placeholder="Your Name" required />
+            <small>e.g. From, Yours, Always</small>
+          </label>
+        </div>
+        <label class="message-field">
+          <span>💬</span>
+          <textarea id="message" maxlength="500" placeholder="Write something from your heart..." required></textarea>
+          <small><b id="counter">0</b>/500</small>
+        </label>
+        <div class="field-grid">
+          <label>
+            <span>🎂</span>
+            <select id="theme">
+              <option value="rose">Rose & Romance</option>
+              <option value="sunset">Warm Sunset</option>
+              <option value="midnight">Midnight Love</option>
+            </select>
+          </label>
+          <label>
+            <span>📅</span>
+            <input id="date" type="date" />
+            <small>Birthday date (optional)</small>
+          </label>
+        </div>
+        <button class="primary" type="submit">✨ Create My Birthday Surprise <b>→</b></button>
+      </form>
+      <p class="tiny-note">♡ Because every special person deserves a special wish ♡</p>
+    </section>
+
+    <section class="motion-section" id="motion">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">A little magic</p><h2>Watch Our Moment Come Alive</h2></div>
+        <span class="scribble">pieces of us ✦</span>
+      </div>
+      <div class="motion-card">
+        <div class="motion-copy">
+          <span>✦</span>
+          <div>
+            <h3>When a memory turns into magic</h3>
+            <p>The photo breaks into little pieces, drifts through the moment, and becomes a memory worth keeping forever. ❤️</p>
+          </div>
+        </div>
+        <video class="motion-video" controls playsinline preload="metadata" poster="assets/image4.jpeg">
+          <source src="assets/birthday-shatter.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+    </section>
+
+    <section class="handcrafted-section" id="handcrafted">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Made from our video</p><h2>Handcrafted Memory</h2></div>
+        <span class="scribble">one frame, forever ♡</span>
+      </div>
+      <div class="handcrafted-card">
+        <div class="handcrafted-frame">
+          <img src="assets/handcrafted-pic-from-video.jpg" alt="Handcrafted memory created from a frame of the birthday video" loading="lazy">
+          <span class="frame-badge">✦ Crafted from our video</span>
+        </div>
+        <div class="handcrafted-copy">
+          <h3>A little moment, turned into a picture.</h3>
+          <p>We picked a frame from the existing birthday video and turned it into a soft, handcrafted keepsake — just for this page. ❤️</p>
+          <a class="secondary small-action" href="assets/handcrafted-pic-from-video.jpg" download="handcrafted-birthday-memory.jpg">♡ Save Handcrafted Pic</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">Little moments</p><h2>Our Happy Place</h2></div>
+        <span class="scribble">memories ♡</span>
+      </div>
+      <div class="polaroids">
+        <figure class="polaroid p1"><img src="assets/image0.jpeg" alt="A happy mirror selfie" loading="lazy"><figcaption>You & Me ♡</figcaption></figure>
+        <figure class="polaroid p2"><img src="assets/image2.jpeg" alt="Birthday celebration" loading="lazy"><figcaption>My Happy Place ♥</figcaption></figure>
+        <figure class="polaroid p3"><img src="assets/image3.jpeg" alt="A sweet birthday moment" loading="lazy"><figcaption>Forever Grateful</figcaption></figure>
+        <figure class="polaroid p4"><img src="assets/image4.jpeg" alt="A cozy couple moment" loading="lazy"><figcaption>With You, Everything ♡</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="heartfelt-section" id="heartfelt">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">From my heart</p><h2>For You, Kapoor ♡</h2></div>
+        <span class="scribble">always & forever ✦</span>
+      </div>
+      <article class="heartfelt-card">
+        <div class="heartfelt-top">💌 A little note I could never say enough</div>
+        <p class="heartfelt-message">Yrr I can’t believe that I have you in my life mtlb kaiseeee?? 🥹❤️ You always heal something you never broke… 🥺❤️‍🩹 I honestly can’t express in words how important and special you are in my life… 🥹❤️ seeing you happy makes me the happiest 🥺💕 toh mere babu hmesha khush raha kar… 🥹🫶 and when life feel tough, main hmesha tere sath hoon… 🫂❤️ tujhe pata hai i am bad at expressing feelings but since you came into my life, you made me feel so safe 🥹🤍 that i learned to share my thoughts. Thankyou so much for everything 🥺❤️ i wish hum kabhi alag na ho 🧿🥹 i want us to be together in every moment of life… 🫂❤️♾️ I love you soooo much Kapoor🥹❤️ may god bless you meri jaan… 🧿🤍✨</p>
+        <div class="heartfelt-sign">— yours, always ❤️</div>
+      </article>
+    </section>
+
+    <section class="love-section" id="messages">
+      <div class="quote">More than a partner,<br><strong>you're my today, tomorrow<br>and always</strong> ♡</div>
+      <div class="cake-wrap">
+        <div class="cake" aria-label="Birthday cake illustration"><div class="candles"><i></i><i></i><i></i><i></i><i></i></div><div class="cake-top"></div><div class="cake-body">HAPPY<br>BIRTHDAY<br><small>MY LOVE ♥</small></div></div>
+      </div>
+    </section>
+
+    <section class="surprise card" id="surprise">
+      <p class="eyebrow dark">One last thing…</p>
+      <h2>Your birthday deserves a moment.</h2>
+      <p class="muted">Tap the button below to reveal your personalized surprise again anytime.</p>
+      <button class="secondary" id="revealBtn">Open the Surprise ♥</button>
+      <button class="video-lock-btn" id="videoLockBtn">🔒 Open Special Adorable Video</button>
+      <button class="ghost" id="shareBtn">Share this birthday link</button>
+      <p id="shareStatus" class="share-status" aria-live="polite"></p>
+
+      <div class="video-card" id="videoCard" hidden>
+        <div class="video-heading">
+          <span>🎬</span>
+          <div>
+            <h3>Special Adorable Video</h3>
+            <p>A little secret made especially for you. ❤️</p>
+          </div>
+        </div>
+        <video id="birthdayVideo" controls playsinline preload="metadata" poster="assets/image0.jpeg">
+          <source src="assets/birthday-surprise.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+        <button class="ghost close-video" id="closeVideoBtn">Close video</button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a href="#home" class="active"><span>⌂</span>Home</a>
+    <a href="#gallery"><span>▧</span>Gallery</a>
+    <a href="#messages"><span>♡</span>Messages</a>
+    <a href="#surprise"><span>🎁</span>Surprise</a>
+  </nav>
+
+  <div class="password-modal" id="passwordModal" aria-hidden="true">
+    <div class="password-box">
+      <button class="close" id="closePassword" aria-label="Close">×</button>
+      <div class="lock-icon">🔐</div>
+      <p class="eyebrow">A secret just for you</p>
+      <h2>Enter the birthday password</h2>
+      <p class="muted">Four little digits to unlock the video surprise. 💕</p>
+      <form id="passwordForm">
+        <input id="videoPassword" type="password" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="••••" autocomplete="off" aria-label="Video password" required>
+        <button class="primary" type="submit">Unlock Special Video 🔓</button>
+      </form>
+      <p class="password-error" id="passwordError" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div class="sparkle">✦</div>
+      <p class="eyebrow">A little note for you</p>
+      <h2>Happy Birthday, <span id="modalRecipient">you</span>! 🎂</h2>
+      <p class="modal-message" id="modalMessage"></p>
+      <p class="from">With all my love,<br><strong id="modalSender">me</strong> ♥</p>
+      <div class="confetti" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
